@@ -10,10 +10,8 @@ module.exports = {
     user:     'postgres',
     password: '751953'
   },
-  pool: {
-    min: 2,
-    max: 10
-  },
+  pool: {     min: 0,     max: 5,     acquireTimeoutMillis: 60000,     idleTimeoutMillis: 600000, },
+ // debug: true,
   migrations: {
     tableName: 'knex_migrations'
   }
